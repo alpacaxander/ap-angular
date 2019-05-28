@@ -1,47 +1,8 @@
-<ul>
-  <li class="slide"> <!-- Me -->
-    <div class="content">
-      <h2>My name is Alexander Paulsell.</h2>
-      <p>I am a recent graduate of CSU Monterey Bay looking for a full time postion working in backend development. 
-
-      </p>
-      <p>This website is built to demonstrate a modern best practices backend.</p>
-    </div>
-    <div>
-      <img src="assets/me/front.jpg">
-    </div>
-  </li>
-  <li class="slide"> <!-- Angular project description -->
-    <div class="content">
-      <h2>Frontend</h2>
-      <p>I will be developing the frontend in Angular because it is well structured with its low coupling between components and dependancy injection so when I add features to the backend maintaining the frontend will be very easy.
-        In the same vein, typescript will ensure data from the backend can be manipulated in a controlled way (and I just like typed languages).
-        The focus of this project is primarilly on the backend so the ample tools to supplied by angular allows me to spend less time on the front in generall.
-        And it just looks nice. Asthetics like animations can be added with relative ease.
-      </p>
-    </div>
-    <div>
-      <img src="assets/me/angular-icon.svg">
-    </div>
-  </li>
-  <li class="slide"> <!-- Backend project description -->
-    <div class="content">
-      <h2>Backend</h2>
-      <p>The backend needs to show off test driven development, microservice architecture, persistant crud database operations, rest api.
-      </p>
-    </div>
-    <div>
-      <img src="assets/me/spring-icon.png">
-    </div>
-  </li>
-  <li class="slide"> <!-- Contact info -->
-    <div class="content">
-      <h2>Contact</h2>
-      <p>Email: Alexander.Dean.Paulsell@gmail.com</p>
-      <p>LinkedIn: https://www.linkedin.com/in/alexander-paulsell/</p>
-    </div>
-    <div>
-      <img src="assets/me/front.jpg">
-    </div>
-  </li>
-</ul>
+<div class="container">
+  <ul>
+    <li routerLink="/about"><p>About Me</p></li>
+    <li routerLink="/website"><p>This Website</p></li>
+    <li routerLink="/frontend"><p>The Frontend</p></li>
+    <li routerLink="/backend"><p>The Backend</p></li>
+  </ul>
+</div>
