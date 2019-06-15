@@ -5,6 +5,7 @@ import { WebsiteComponent } from './website/website.component';
 import { AboutComponent } from './about/about.component';
 import { FrontendComponent } from './frontend/frontend.component';
 import { BackendComponent } from './backend/backend.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,7 +16,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes),
+    HttpClientModule,
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
