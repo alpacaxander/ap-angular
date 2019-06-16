@@ -8,13 +8,14 @@ import { DataService } from '../data.service';
 })
 export class AboutComponent implements OnInit {
 
-  testData$;
+  testData$: {"title":string, "sections": []};
+  show = false;
 
   constructor(private data: DataService) { }
 
   ngOnInit() {
-    this.data.getTest().subscribe(
-      data => console.log(data)
+    this.data.getTest("DocumentTitle").subscribe(
+      data => this.testData$ = data
     );
   }
 

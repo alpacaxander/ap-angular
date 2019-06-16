@@ -1,3 +1,5 @@
-<p>
-  about works! ${{ testData }}
-</p>
+<ul id="document">
+  <li class="section" *ngFor="let section of testData$.sections">
+    {{ section.data }}
+  </li>
+</ul>
